@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Projeto Mensagem oculta</title>
+    <link rel="stylesheet" href="./msg.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family = Bebas + Neue & family = Consolador + Pincel & família = Karla: ital, wght @ 0,600; 0,800; 1,800 & family = Lagosta & family = Road + Rage & family = Roboto: wght @ 300; 900 & family = Shippori + Antique & display = swap ');
+    </style>
+</head>
+<body background="https://www.kaspersky.com.br/content/pt-br/images/repository/isc/2021/encryption-1.jpg" > 
+    <div class="caixaInicial">
+        <h1>Mensagem oculta</h1>
+   <br>
+   <main>
+        <fieldset class="fieldset">
+            <select id="selecao">
+                <optgroup>
+                <option value disabled selected>Escolha a Criptografia</option>
+                <option value="cesar">Cifra de Cesar</option>
+                <option value="base64">Base 64</option>
+                </optgroup>
+            </select>
+
+            <div id="cesar">
+                    <h3>Escolha a chave 🔒</h3>
+                    <input type="number" id="chave" placeholder="Numero da chave" value="0">
+                    <h3>Você deseja Codificar ou Descodificar uma mensagem?</h3>
+                <div class="radios">
+                    <label for='escolha1'>Codificar</label>
+                    <input type="radio" id="codfCesar" value='codfCesar' name="escolha" checked>
+                    <label for='escolha2'>Descodificar</label>
+                    <input type="radio" id='decodf' value='decodf' name="escolha">
+                    </div>    
+
+                    <textarea id="input" label="texto"></textarea>
+                    <h3 style="color: yellow;">Mensagem</h3>
+                    <textarea id="output" readonly></textarea>
+            </div>
+          
+            <div id="B64">
+                    <h3>Codificar ou Descodificar?</h3>
+                <div class="radios">
+                    <label for='opcao'>Criptografar</label>
+                    <input type="radio" id="opcao" value='opcao' name="escolhab" checked>
+                    <label for='opcao2'>Descriptografar</label>
+                    <input type="radio" id="opcao2" value='opcao2' name="escolhab">
+            </div>
+                    <h3>Escreva aqui a mensagem que você deseja criptografar ou descriptografar:</h3>
+                    <textarea id="input2"></textarea>
+                    <h3 style="color: yellow;">Mensagem</h3>
+                    <textarea id="output2" readonly></textarea>
+    </div>
+        </fieldset>
+    </div>
+</main>
+<footer>
+ <span>© Copyright</span>
+</footer>
+
+</div>
+    <script src="./msg.js"></script>
+</body>
+</html>
